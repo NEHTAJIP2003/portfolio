@@ -45,12 +45,22 @@ section{
     z-index: 100;
 }
 
-.logo{
+
+/* Logo Styling */
+.logo {
     font-size: 2.5rem;
-    color: var(--bg-color);
+    color: var(--text-color);
     font-weight: 700;
-    cursor: default;
+    cursor: pointer; /* Change cursor to pointer to indicate interactivity */
+    transition: color 0.3s ease, transform 0.3s ease; /* Add a transition for smooth effect */
 }
+
+/* Hover Effect for Logo */
+.logo:hover {
+    color: var(--main-color); /* Change logo color on hover */
+    transform: scale(1.1); /* Slightly scale up the logo for a more interactive feel */
+}
+
 
 .navbar a {
     font-size: 1.5rem;
@@ -61,7 +71,7 @@ section{
 
 .navbar a:hover,
 .navbar a.active {
-    color: var(--text-color);
+    color: var(--main-color);
 }
 
 #menu-icon {
@@ -153,3 +163,69 @@ section{
 .btn:hover {
     box-shadow: none;
 }
+
+
+/* service  */
+
+.heading {
+    font-size: 3.6rem;  /* Set the font size for the heading */
+    font-weight: 700;   /* Make the heading bold */
+    text-align: center; /* Center the heading text */
+    margin-bottom: 2rem; /* Add space below the heading */
+}
+
+.service span {
+    color: var(--main-color);  /* Apply the main color to the span element */
+    font-weight: 600;          /* Slightly reduce the font weight of the span */
+}
+
+
+.service h2 {
+    margin-bottom: 5rem;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.service-container .service-box {
+    flex: 1 1 30rem;
+    background: var(--snd-bg-color);
+    padding: 3rem 2rem 4rem;
+    border-radius: 3rem;
+    text-align: center;
+    border: 0.1rem solid var(--main-color);
+    transition: background-color 0.5s ease, border-color 0.5s ease, transform 0.5s ease; /* Added transitions */
+}
+
+.service-container .service-box:hover {
+    background-color: var(--bg-color); /* Example hover background */
+    border-color: var(--main-color); /* Example hover border color */
+    transform: scale(1.05); /* Slight scale up effect */
+}
+
+
+.service-container .service-box {
+    border-color: var(--bg-color);
+    transform: scale(1.02);
+}
+
+.service-box i {
+    font-size: 7rem;
+    color: var(--main-color);
+}
+
+.service-box h3 {
+    font-size: 2.6rem;
+}
+
+.service-box p {
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
+}
+
+/* skills */
